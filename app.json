@@ -1,0 +1,36 @@
+{
+  "id": "07-sam2-segment",
+  "slug": "autodl-sam2",
+  "name": "SAM2.1 分割",
+  "description": "上传图片并点击目标物体，下载透明物体PNG和黑白蒙版。",
+  "task": "image-segmentation",
+  "requires_gpu": false,
+  "imports": [
+    "torch",
+    "transformers"
+  ],
+  "model_gb": 0.185,
+  "disk_gb": 2,
+  "gpu": "支持CPU或GPU，推荐GPU。建议8GB内存起测。",
+  "license": "Apache-2.0",
+  "source": "https://github.com/facebookresearch/sam2",
+  "models": {
+    "main": {
+      "kind": "hf",
+      "required_files": ["config.json","model.safetensors","preprocessor_config.json"],
+      "repo": "facebook/sam2.1-hiera-small",
+      "revision": "ee5bba1d82bb8749febdf90f45e84b687142ba03",
+      "allow_patterns": [
+        "*.json",
+        "*.safetensors",
+        "LICENSE*",
+        "README.md"
+      ]
+    }
+  },
+  "torch": true,
+  "account": {
+    "github": "zw2029181901",
+    "autodl_user": "200211"
+  }
+}
