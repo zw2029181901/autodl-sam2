@@ -9,7 +9,7 @@
 | AutoDL.Art账号 | 200211（金鳞） |
 | 介绍 | 上传图片并点击目标物体，下载透明物体PNG和黑白蒙版。 |
 | 服务端口 | 6006 |
-| 启动命令 | bash /root/autodl-sam2/start.sh |
+| 本批导出镜像启动命令 | bash /root/autodl-active/run-service.sh |
 | 模型容量 | 约0.185GB；模型及输出预留2GB，依赖另计 |
 | 上游 | https://github.com/facebookresearch/sam2 |
 | 许可 | Apache-2.0 |
